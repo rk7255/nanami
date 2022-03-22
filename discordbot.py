@@ -36,10 +36,10 @@ async def test(ctx):
     
     s = A + B + '\n' + C + D
     correct = "<:n1:952222321538654339>" + "<:n2:952222338957606923>" + '\n' + "<:n3:952222351586631740>" + "<:n4:952222370154811452>"
-    if s == correct :
-        s = s + "\nCongrats!!!"
-    
     await ctx.send(s)
+    s = "<:n1:952222321538654339>" + "<:n2:952222338957606923>" + '\n' + "<:n3:952222351586631740>" + "<:n4:952222370154811452>"
+    if s == correct :
+            await ctx.send("Congrats!!!")
 
 
 token = getenv('DISCORD_BOT_TOKEN')
