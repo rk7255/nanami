@@ -24,7 +24,7 @@ async def slot(ctx):
     B = random.choice(slot_list)
     C = random.choice(slot_list)
     D = random.choice(slot_list)
-    await ctx.send("%s%s/%s%s" % (A, B, C, D))
+    await ctx.send("%s%s\n%s%s" % (A, B, C, D))
     
     
 
