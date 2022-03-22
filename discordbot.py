@@ -16,23 +16,10 @@ async def on_command_error(ctx, error):
 @bot.command()
 async def ping(ctx):
     await ctx.send('pong')
-    
+   
+
 @bot.command()
 async def slot(ctx):
-    slot_list = ["<:n1:952222321538654339>", "<:n2:952222338957606923>", "<:n3:952222351586631740>", "<:n4:952222370154811452>"]
-    A = random.choice(slot_list)
-    B = random.choice(slot_list)
-    C = random.choice(slot_list)
-    D = random.choice(slot_list)
-    
-    s = A + B + '\n' + C + D
-    correct = "<:n1:952222321538654339>" + "<:n2:952222338957606923>" + '\n' + "<:n3:952222351586631740>" + "<:n4:952222370154811452>"
-    await ctx.send(s)
-    if s == correct :
-            await ctx.send("Congrats!!!")
-            
-@bot.command()
-async def test(ctx):
     slot_list = ["<:n1:952222321538654339>", "<:n2:952222338957606923>", "<:n3:952222351586631740>", "<:n4:952222370154811452>"]
     list_shuffle = random.sample(slot_list, 4)
     A = list_shuffle[0]
