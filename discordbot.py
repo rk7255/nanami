@@ -20,11 +20,11 @@ async def ping(ctx):
 @bot.command()
 async def slot(ctx):
     slot_list = ['n1', 'n2', 'n3', 'n4']
-    A = random.choixe(slot_list)
-    B = random.choixe(slot_list)
-    C = random.choixe(slot_list)
-    D = random.choixe(slot_list)
-    await ctx.send("%s%s%s%s", (A, B, C, D))
+    A = random.choice(slot_list)
+    B = random.choice(slot_list)
+    C = random.choice(slot_list)
+    D = random.choice(slot_list)
+    await ctx.send("%s%s/%s%s", (A, B, C, D))
     
     
 
