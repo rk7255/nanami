@@ -15,6 +15,12 @@ async def on_command_error(ctx, error):
 @bot.command()
 async def ping(ctx):
     await ctx.send('pong')
+    
+@bot.command()
+async def nanami_slot(ctx):
+    await ctx.send('ななみすろっと')
+    
+    
 
 
 token = getenv('DISCORD_BOT_TOKEN')
