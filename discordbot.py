@@ -17,7 +17,7 @@ async def ping(ctx):
     await ctx.send('pong')
     
 @bot.command()
-async def nanami_slot(ctx):
+async def slot(ctx):
     await ctx.send('ななみすろっと')
     
     
