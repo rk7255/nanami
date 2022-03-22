@@ -19,7 +19,7 @@ async def ping(ctx):
     
 @bot.command()
 async def slot(ctx):
-    slot_list = [':n1:', ':n2:', ':n3:', ':n4:']
+    slot_list = ["<:n1:952222321538654339>", "<:n2:952222338957606923>", "<:n3:952222351586631740>", "<:n4:952222370154811452>"]
     A = random.choice(slot_list)
     B = random.choice(slot_list)
     C = random.choice(slot_list)
