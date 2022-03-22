@@ -34,7 +34,7 @@ async def test(ctx):
     C = random.choice(slot_list)
     D = random.choice(slot_list)
     
-    s = A + B + '/n' + C + D
+    s = A + B + '\n' + C + D
     correct = "<:n1:952222321538654339>" + "<:n2:952222338957606923>" + '\n' + "<:n3:952222351586631740>" + "<:n4:952222370154811452>"
     if s == correct :
         s = s + "\nCongrats!!!"
