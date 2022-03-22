@@ -25,17 +25,6 @@ async def slot(ctx):
     C = random.choice(slot_list)
     D = random.choice(slot_list)
     await ctx.send("%s%s\n%s%s" % (A, B, C, D))
-    
-@bot.command()
-async def test(ctx):
-    slot_list = ["<:n1:952222321538654339>", "<:n2:952222338957606923>", "<:n3:952222351586631740>", "<:n4:952222370154811452>"]
-    A = random.choice(slot_list)
-    B = random.choice(slot_list)
-    C = random.choice(slot_list)
-    D = random.choice(slot_list)
-    #await ctx.send("%s%s\n%s%s" % (A, B, C, D))
-    await ctx.send("<:n1:952222321538654339><:n2:952222338957606923>/n<:n3:952222351586631740><:n4:952222370154811452>)
-    
 
 
 token = getenv('DISCORD_BOT_TOKEN')
