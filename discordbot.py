@@ -1,6 +1,7 @@
 from discord.ext import commands
 from os import getenv
 import traceback
+import random
 
 bot = commands.Bot(command_prefix='/')
 
@@ -18,7 +19,12 @@ async def ping(ctx):
     
 @bot.command()
 async def slot(ctx):
-    await ctx.send('ななみすろっと')
+    slot_list = ['n1', 'n2', 'n3', 'n4']
+    A = random.choixe(slot_list)
+    B = random.choixe(slot_list)
+    C = random.choixe(slot_list)
+    D = random.choixe(slot_list)
+    await ctx.send("%s%s%s%s", (A, B, C, D))
     
     
 
