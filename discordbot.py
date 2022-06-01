@@ -45,7 +45,7 @@ async def baka(ctx):
     correct = "<:nr1:980975270863446016>" + "<:nr2:980975382884933672>" + '\n' + "<:nr3:980975433992523847>" + "<:nr4:980975462018850866>"
     await ctx.send(s)
     if s == correct :
-            await ctx.send("Congrats!!!")
+            await ctx.send("バ〜〜〜カ！！！")
        
       
             
