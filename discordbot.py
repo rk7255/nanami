@@ -4,7 +4,7 @@ import traceback
 import random
 
 bot = commands.Bot(command_prefix='$')
-
+bot = commands.Bot(command_prefix='/')
 
 @bot.event
 async def on_command_error(ctx, error):
