@@ -27,7 +27,7 @@ async def slot(ctx):
     
     s = A + B + '\n' + C + D
     correct = "<:n1:952222321538654339>" + "<:n2:952222338957606923>" + '\n' + "<:n3:952222351586631740>" + "<:n4:952222370154811452>"
-    name = ctx.author.id
+    name = ctx.author
     await ctx.send(name)
     await ctx.send(s)
     if s == correct :
