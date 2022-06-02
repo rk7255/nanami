@@ -27,10 +27,11 @@ async def slot(ctx):
     
     s = A + B + '\n' + C + D
     correct = "<:n1:952222321538654339>" + "<:n2:952222338957606923>" + '\n' + "<:n3:952222351586631740>" + "<:n4:952222370154811452>"
-    name = ctx.author
     await ctx.send(s)
+    
+    c_msg = "Congrats!!!" + ctx.author +  "!"
     if s == correct :
-            await ctx.send("Congrats!!!", name, "!")
+            await ctx.send(c_msg)
             
 @bot.command()
 async def baka(ctx):
