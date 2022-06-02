@@ -11,7 +11,6 @@ async def on_command_error(ctx, error):
     error_msg = ''.join(traceback.TracebackException.from_exception(orig_error).format())
     await ctx.send(error_msg)
 
-
 @bot.command()
 async def ping(ctx):
     await ctx.send('pong')
@@ -28,7 +27,7 @@ async def slot(ctx):
     
     s = A + B + '\n' + C + D
     correct = "<:n1:952222321538654339>" + "<:n2:952222338957606923>" + '\n' + "<:n3:952222351586631740>" + "<:n4:952222370154811452>"
-    name = message.author.id
+    name = ctx.author.id
     await ctx.send(name)
     await ctx.send(s)
     if s == correct :
