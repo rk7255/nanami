@@ -18,7 +18,6 @@ async def ping(ctx):
 
 @bot.command()
 async def slot(ctx):
-    name = ctx.author
     slot_list = ["<:n1:952222321538654339>", "<:n2:952222338957606923>", "<:n3:952222351586631740>", "<:n4:952222370154811452>"]
     list_shuffle = random.sample(slot_list, 4)
     A = list_shuffle[0]
@@ -31,8 +30,8 @@ async def slot(ctx):
     await ctx.send(s)
     
     if s == correct :
-        c_msg = "Congrats!!!" + name +  "!"
-            await ctx.send(c_msg)
+        name = ctx.author
+            await ctx.send("Congrats!!! %s !" % (name))
             
 @bot.command()
 async def baka(ctx):
