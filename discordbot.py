@@ -47,8 +47,10 @@ async def baka(ctx):
     await ctx.send(s)
     if s == correct :
         await ctx.send("バ〜〜〜カ！！！")
-       
-      
+        
+        
+@bot.command()
+async def nen(ctx):
             
     
 token = getenv('DISCORD_BOT_TOKEN')
