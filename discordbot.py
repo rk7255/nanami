@@ -51,7 +51,7 @@ async def baka(ctx):
         
 @bot.command()
 async def nen(ctx):
-    await asyncio.sleep(10)
+    await ctx.send("")
             
     
 token = getenv('DISCORD_BOT_TOKEN')
