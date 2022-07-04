@@ -18,7 +18,6 @@ async def slot(ctx):
     if s == correct:
         name = ctx.author
         await ctx.send("Congrats!!! %s !" % (name))
-        
 @bot.command()
 async def baka(ctx):
     slot_list = ["<:nr1:980975270863446016>", "<:nr2:980975382884933672>", "<:nr3:980975433992523847>", "<:nr4:980975462018850866>"]
@@ -32,6 +31,5 @@ async def baka(ctx):
     await ctx.send(s)
     if s == correct:
         await ctx.send("バ〜〜〜カ！！！")
-        
 token = getenv('DISCORD_BOT_TOKEN')
 bot.run(token)
