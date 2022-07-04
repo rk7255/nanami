@@ -7,6 +7,7 @@ import discord
 bot = commands.Bot(command_prefix='/')
 client = discord.Client()
 
+'''
 @bot.event
 async def on_command_error(ctx, error):
     orig_error = getattr(error, "original", error)
@@ -15,7 +16,7 @@ async def on_command_error(ctx, error):
     
     await send_ch.send(error_msg)
 
-
+'''
 
 @bot.command()
 async def slot(ctx):
